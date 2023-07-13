@@ -15,6 +15,7 @@ namespace Code_Base.Player_Scripts
         private void Start()
         {
             _camera = Camera.main;
+            
             HideCursor();
         }
 
