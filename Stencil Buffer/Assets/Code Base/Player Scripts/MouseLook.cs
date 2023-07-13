@@ -10,9 +10,13 @@ namespace Code_Base.Player_Scripts
         private float _mouseX;
         private float _mouseY;
         private float _xRotation = 0f;
+        private Camera _camera;
 
-        private void Start() =>
+        private void Start()
+        {
+            _camera = Camera.main;
             HideCursor();
+        }
 
         public void Update()
         {
@@ -22,7 +26,7 @@ namespace Code_Base.Player_Scripts
             _xRotation -= _mouseY;
             _xRotation = Mathf.Clamp(_xRotation, -80f, 80f);
             
-            transform.localRotation = Quaternion.Euler(_xRotation, 0f, 0f);
+            _camera.transform.localRotation = Quaternion.Euler(_xRotation, 0f, 0f);
             _playerTransform.Rotate(Vector3.up * _mouseX);
         }
 
