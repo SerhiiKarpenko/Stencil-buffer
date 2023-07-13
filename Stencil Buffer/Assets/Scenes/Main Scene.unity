@@ -373,7 +373,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 92a1da21b630cbe4fae044378e1205c7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.024
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 92a1da21b630cbe4fae044378e1205c7,
         type: 3}
@@ -383,7 +383,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 92a1da21b630cbe4fae044378e1205c7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.549
+      value: -11.43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 92a1da21b630cbe4fae044378e1205c7,
         type: 3}
@@ -425,6 +425,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92a1da21b630cbe4fae044378e1205c7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7071182760956848314, guid: 92a1da21b630cbe4fae044378e1205c7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -437,12 +442,32 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92a1da21b630cbe4fae044378e1205c7, type: 3}
+--- !u!1 &1478817747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 92a1da21b630cbe4fae044378e1205c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 883466216}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1478817748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 92a1da21b630cbe4fae044378e1205c7,
     type: 3}
   m_PrefabInstance: {fileID: 883466216}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1478817749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478817747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36cd8e29e5a18449b8d79c0e91db5f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _amplitude: 2
+  _frequency: 2
 --- !u!1 &1806990919 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 75300401581679731, guid: b69b0d77cb59f594e8617471ef0f68ae,
